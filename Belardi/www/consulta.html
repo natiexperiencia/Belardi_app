@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Belardi</title>
+    </head>
+    <body>
+        <div id="app">
+            <br/>
+            <h1 id="titulo">Consultar</h1>
+            <nav id="menu">
+                <br>
+                    <p id="primerElemento"><a href="home.html">Home</a></p>
+                    <p><a href="consulta.html">Consulta</a></p>
+                    <p><a href="dispensar.html">Dispensar</a></p>
+                    <p><a href="anadir.html">Añadir</a></p>
+                    <p><a href="modificar.html">Administrar</a></p>
+            </nav>
+            <br/>
+            <img src="img/A.jpg" id="logo"/>
+            <br/>
+           <div id="consultaProductos">
+            <fieldset>
+                <legend>Consulta por Producto</legend>
+            </fieldset>
+           </div>
+           <div id="consultarUsuarios">
+            <fieldset>
+                <legend>Consulta por Usuario</legend>
+                <input type="radio" name="radioUsuario" value="todos"><label for="radioUsuario">Todos los usuarios</label>
+                <input type="radio" name="radioUsuario" value="buscar"><label for="radioUsuario">Buscar un usuario</label>
+                <br/>
+                <label for="nombreUsuario" class="labelNombreUsuario">Nombre de usuario a buscar</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario" />
+                <br/>
+                <input type="submit" id="submitTodosUsuarios" value="Buscar">
+                <input type="submit" id="submitUnUsuario" value="Buscar">
+            </fieldset>
+           </div>
+           <br>
+        <div id="radioButtons">
+            <input type="radio" name="radio" value="productos" class="radio"><label for="radio" class="radio">Consultar productos
+            <input type="radio" name="radio" value="usuarios" class="radio"><label for="radio" class="radio">Consultar usuarios
+        </div>
+        </div>
+        <footer>
+            <p>&copy;&nbsp;Iker Oñatibia -- 2015</p>
+        </footer>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.animate-colors.js"></script>
+        <script type="text/javascript" src="js/consulta.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
