@@ -73,7 +73,7 @@ input{
     box-shadow:15px 15px 25px;
     border:2px solid black;
 }
-form{
+#formulario{
     -webkit-text-fill-color:#338833;
     -webkit-text-stroke: 0.2px yellow;
     font-size:15px;

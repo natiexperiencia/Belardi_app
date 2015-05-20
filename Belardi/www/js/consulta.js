@@ -14,6 +14,10 @@ $(document).ready(function() {
 				visibility: 'hidden',
 				display: 'none'
 			});
+			$("#submitProducto").css({
+				visibility: 'visible',
+				display: 'block'
+			});
 		}else{
 			$("#consultaProductos").css({
 				visibility:'hidden',
@@ -26,6 +30,10 @@ $(document).ready(function() {
 			$("#consultarUsuarios").css({
 				visibility: 'visible',
 				display: 'block'
+			});
+			$("#submitProducto").css({
+				visibility: 'hidden',
+				display: 'none'
 			});
 		}
 	});//change radio
