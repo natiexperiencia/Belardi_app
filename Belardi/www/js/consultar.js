@@ -13,14 +13,13 @@ $(document).ready(function() {
 				data: formData,	
 			})
 			.done(function(data) {
-						
+				console.log(data);	
 			})
 			.fail(function() {
 				alert("Fallo");
 				console.log("error");
 			})
 			.always(function() {
-				alert(data);
 				console.log("complete");
 			});
 		}else{
@@ -33,10 +32,10 @@ $(document).ready(function() {
 				data: formData,	
 			})
 			.done(function(data) {
-						
+				console.log(data);	
 			})
 			.fail(function() {
-				alert("Fallo");
+				alert("Fallo2");
 				console.log("error");
 			})
 			.always(function() {
