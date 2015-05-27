@@ -155,6 +155,10 @@ nav a{
     display: none;
     margin-left: 500px;
 }
+table{
+    margin: auto;
+    margin-top: 30px;
+}
 
 
 
