@@ -7,13 +7,14 @@ $(document).ready(function() {
 			var formData = $(this).serializeArray();
 
 			$.ajax({
-				url: 'http://natiteka.zapto.org/php/consultaUsuarios.php',
+				url: '../php/consultaUsuarios.php',
 				type: 'POST',
 				dataType: 'json',
 				data: formData,	
 			})
 			.done(function(data) {
-				console.log(data);	
+				console.log(data);
+					$('#resultadoConsulta').append("<p>"+data.numero+", " + data.nombre + ", " + data.email + ", " + data.rol + "</p>");
 			})
 			.fail(function() {
 				alert("Fallo");
@@ -26,7 +27,7 @@ $(document).ready(function() {
 			var formData = $(this).serializeArray();
 
 			$.ajax({
-				url: 'http://natiteka.zapto.org/php/consultaProductos.php',
+				url: '../php/consultaProductos.php',
 				type: 'POST',
 				dataType: 'json',
 				data: formData,	

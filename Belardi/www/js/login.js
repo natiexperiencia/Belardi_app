@@ -9,7 +9,7 @@ $(document).ready(function() {
 		var formData = $(this).serializeArray();
 
 		$.ajax({
-			url: 'http://natiteka.zapto.org/php/login.php',
+			url: '../php/login.php',
 			type: 'POST',
 			dataType: 'json',
 			data: formData,	

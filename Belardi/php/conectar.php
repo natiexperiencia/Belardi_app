@@ -1,7 +1,7 @@
 <?php
 	function Conectarse() 
 	{ 
-   		if (!($link=mysql_connect("natiteka.zapto.org","remoto","nati666000"))) 
+   		if (!($link=mysql_connect("localhost","belardi","nati666000"))) 
    		{ 
       		echo "Error conectando a la base de datos."; 
       		exit(); 
